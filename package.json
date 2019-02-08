@@ -1,0 +1,39 @@
+{
+  "name": "signifier",
+  "bin": {
+    "signifier": "./index.js"
+  },
+  "version": "0.0.1",
+  "description": "CLI tool for calculating statistical significance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthoffner/signifier.git"
+  },
+  "keywords": [
+    "statistical",
+    "significance",
+    "ab",
+    "test"
+  ],
+  "author": "Matt Hoffner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthoffner/signifier/issues"
+  },
+  "homepage": "https://github.com/matthoffner/signifier#readme",
+  "dependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/register": "^7.0.0",
+    "core-js": "^2.5.7",
+    "csvtojson": "^2.0.8",
+    "plotly.js": "^1.42.5",
+    "puppeteer": "^1.10.0",
+    "react-plotly.js": "^2.2.0",
+    "term-img": "^2.1.0",
+    "yargs": "^12.0.2"
+  }
+}
