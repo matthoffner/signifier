@@ -3,7 +3,7 @@
   "bin": {
     "signifier": "./index.js"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "CLI tool for calculating statistical significance",
   "main": "index.js",
   "scripts": {
