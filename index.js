@@ -1,6 +1,5 @@
 #! /usr/bin/env node
 require("@babel/register");
-require("core-js/fn/array/flatten");
 const fs = require("fs");
 const csvtojson = require("csvtojson");
 const argv = require("yargs").argv;
@@ -61,8 +60,8 @@ const sampler = async () => {
     control_sample.push(sampleWithReplacement(control));
     variant_sample.push(sampleWithReplacement(variant));
   }
-  const variant_stddev = stdDev(variant_sample.flatten());
-  const control_stddev = stdDev(control_sample.flatten());
+  const variant_stddev = stdDev(variant_sample.flat(Infinity));
+  const control_stddev = stdDev(control_sample.flat(Infinity));
 
   // Compare and determine if significant
   const deviation = Math.sqrt(variant_stddev ** 2 + control_stddev ** 2);

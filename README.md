@@ -1,19 +1,15 @@
 # signifier
 
-Node.js tool for calculating significance, creates error bar charts in terminals
+Node.js cli for calculating significance, creating error bar charts in terminals:
 
-Use as a CLI tool with a CSV:
+`npx signifier --fileName="test.csv" --a="column_name_a" --b="column_name_b" --i=1000`
 
-`npm i -g @porch/sampler`
-
-`sampler --fileName="test.csv" --a="column_name_a" --b="column_name_b" --i=1000`
-
-Will save a screenshot with error bar chart after running analysis. For newer terminals sampler will output results in the terminal:
+Will save a screenshot with error bar chart after running analysis. Requires iTerm 2 or newer to display charts.
 
 ![](termimg.png)
 
 #### Inspiration
 
-- Plotly
-- Victory cli
-- repng
+- term-img
+- plotly
+- puppeteer
